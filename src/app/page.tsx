@@ -25,8 +25,8 @@ export default function Home() {
         publishableKey: process.env.NEXT_PUBLIC_PUBLISHABLE_KEY as string,
       },
       clientId: process.env.NEXT_PUBLIC_CLIENT_ID as string,
-      redirectUri: `${process.env.SERVICE_DOMAIN}/redirect`,
-      logoutRedirectUri: `${process.env.SERVICE_DOMAIN}/`,
+      redirectUri: `${process.env.NEXT_PUBLIC_SERVICE_DOMAIN}/redirect`,
+      logoutRedirectUri: `${process.env.NEXT_PUBLIC_SERVICE_DOMAIN}/`,
       audience: "platform_api",
       scope: "openid offline_access email transact",
     });
